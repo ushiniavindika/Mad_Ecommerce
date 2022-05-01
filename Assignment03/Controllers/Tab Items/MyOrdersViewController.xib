@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyOrdersViewController" customModule="Assignment03" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ieU-xY-Tgf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGm-nx-FzD" customClass="TopNavigationView" customModule="Assignment03" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="1ch-ri-mbM"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="flag" value="SUB"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_purchase" translatesAutoresizingMaskIntoConstraints="NO" id="ytG-tR-OjG">
+                            <rect key="frame" x="40" y="235" width="295" height="232"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ooops! It seems like you do not have any purchases yet! Don't you think this is the time for your first order?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ric-2A-hwX">
+                            <rect key="frame" x="12" y="100" width="351" height="95"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="95" id="KYR-aH-ipi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                            <color key="textColor" systemColor="systemIndigoColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ric-2A-hwX" secondAttribute="trailing" constant="12" id="9S8-oq-DL6"/>
+                        <constraint firstItem="ric-2A-hwX" firstAttribute="leading" secondItem="ieU-xY-Tgf" secondAttribute="leading" constant="12" id="9gX-Ki-bSn"/>
+                        <constraint firstItem="ytG-tR-OjG" firstAttribute="leading" secondItem="ieU-xY-Tgf" secondAttribute="leading" constant="40" id="IYQ-cE-W8L"/>
+                        <constraint firstItem="SGm-nx-FzD" firstAttribute="leading" secondItem="ieU-xY-Tgf" secondAttribute="leading" id="Jwc-eY-7j0"/>
+                        <constraint firstItem="ytG-tR-OjG" firstAttribute="top" secondItem="ric-2A-hwX" secondAttribute="bottom" constant="40" id="Knk-o0-PLq"/>
+                        <constraint firstAttribute="bottom" secondItem="ytG-tR-OjG" secondAttribute="bottom" constant="200" id="ag2-6Z-28u"/>
+                        <constraint firstAttribute="trailing" secondItem="ytG-tR-OjG" secondAttribute="trailing" constant="40" id="fBx-Yx-x8C"/>
+                        <constraint firstAttribute="trailing" secondItem="SGm-nx-FzD" secondAttribute="trailing" id="jB7-xH-9DT"/>
+                        <constraint firstItem="SGm-nx-FzD" firstAttribute="top" secondItem="ieU-xY-Tgf" secondAttribute="top" id="rpB-kV-6Ch"/>
+                        <constraint firstItem="ric-2A-hwX" firstAttribute="top" secondItem="SGm-nx-FzD" secondAttribute="bottom" constant="40" id="z3H-93-I9k"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ieU-xY-Tgf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ivt-Yu-edg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ieU-xY-Tgf" secondAttribute="bottom" id="Ju8-wG-DWw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ieU-xY-Tgf" secondAttribute="trailing" id="gXB-7c-neb"/>
+                <constraint firstItem="ieU-xY-Tgf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oEn-7r-Fr6"/>
+            </constraints>
+            <point key="canvasLocation" x="-130.40000000000001" y="65.217391304347828"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_purchase" width="838" height="695"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
